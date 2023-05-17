@@ -1,7 +1,7 @@
-import com.kms.katalon.core.model.FailureHandling
 import internal.GlobalVariable as GlobalVariable
-import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+import com.kms.katalon.core.model.FailureHandling
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 'Initialize test session: Open browser and set view port'
@@ -16,7 +16,7 @@ WebUI.navigateToUrl(GlobalVariable.application_domain + '/')
 
 'step 2: At Page_home click on hyperlink_pricing --> navigate to Page_pricing'
 
-testObj = findTestObject('')
+testObj = findTestObject('Object Repository/Page_home/hyperlink_object')
 
 WebUI.delay(3)
 
@@ -30,7 +30,7 @@ WebUI.enhancedClick(testObj)
 
 'step 3: At Page_pricing click on hyperlink_business_outcomes --> navigate to Page_business-outcomes'
 
-testObj = findTestObject('')
+testObj = findTestObject('Object Repository/Page_pricing/hyperlink_object')
 
 WebUI.delay(3)
 
@@ -44,7 +44,7 @@ WebUI.enhancedClick(testObj)
 
 'step 4: At Page_business-outcomes click on hyperlink_test_automation_roi --> navigate to Page_test-automation-roi'
 
-testObj = findTestObject('')
+testObj = findTestObject('Object Repository/Page_business-outcomes/hyperlink_object')
 
 WebUI.delay(3)
 

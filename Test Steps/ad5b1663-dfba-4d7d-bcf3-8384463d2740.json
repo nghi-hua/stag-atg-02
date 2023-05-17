@@ -1,0 +1,9 @@
+{
+    "steps": [
+        "step 1: Navigate to Page_home",
+        "step 2: At Page_home click on hyperlink_pricing --> navigate to Page_pricing",
+        "step 3: At Page_pricing click on hyperlink_business_outcomes --> navigate to Page_business-outcomes",
+        "step 4: At Page_business-outcomes click on hyperlink_test_automation_roi --> navigate to Page_test-automation-roi",
+        "step 5: Add visual checkpoint at Page_test-automation-roi"
+    ]
+}
